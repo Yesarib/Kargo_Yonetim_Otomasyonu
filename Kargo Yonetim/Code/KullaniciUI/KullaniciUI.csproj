@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95FDB844-DB0D-4F2D-8BF7-F4BB01DE3CB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KullaniciUI</RootNamespace>
+    <AssemblyName>KullaniciUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\yesar\Desktop\Login\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>181BBA64E02DCD1F5BB39BD870A95A99F0D781EC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KullaniciUI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Bnfu_1.5.3_crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Desktop\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Desktop\Yeni klasör\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Ana Sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Ana Sayfa.Designer.cs">
+      <DependentUpon>Ana Sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Bilgiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Bilgiler.Designer.cs">
+      <DependentUpon>Bilgiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\KargoEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\KargoEkle.Designer.cs">
+      <DependentUpon>KargoEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Kargo Takip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Kargo Takip.Designer.cs">
+      <DependentUpon>Kargo Takip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Kargo Yonetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Kargo Yonetim.Designer.cs">
+      <DependentUpon>Kargo Yonetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Personel Yonetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Personel Yonetim.Designer.cs">
+      <DependentUpon>Personel Yonetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\PersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\PersonelEkle.Designer.cs">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitOl.Designer.cs">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisSayfa.Designer.cs">
+      <DependentUpon>girisSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kullaniciDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kullaniciDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sifreunuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sifreunuttum.Designer.cs">
+      <DependentUpon>Sifreunuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sqlbaglanti.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Ana Sayfa.resx">
+      <DependentUpon>Ana Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Bilgiler.resx">
+      <DependentUpon>Bilgiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\KargoEkle.resx">
+      <DependentUpon>KargoEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Kargo Takip.resx">
+      <DependentUpon>Kargo Takip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Kargo Yonetim.resx">
+      <DependentUpon>Kargo Yonetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Personel Yonetim.resx">
+      <DependentUpon>Personel Yonetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\PersonelEkle.resx">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisSayfa.resx">
+      <DependentUpon>girisSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sifreunuttum.resx">
+      <DependentUpon>Sifreunuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="kullaniciDataSet.xsc">
+      <DependentUpon>kullaniciDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kullaniciDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kullaniciDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kullaniciDataSet.xss">
+      <DependentUpon>kullaniciDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kullaniciDataSet1.xsc">
+      <DependentUpon>kullaniciDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kullaniciDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kullaniciDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kullaniciDataSet1.xss">
+      <DependentUpon>kullaniciDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KullaniciUI_TemporaryKey.pfx" />
+    <None Include="loginDataSet.xsc">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet.xss">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet1.xsc">
+      <DependentUpon>loginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet1.xss">
+      <DependentUpon>loginDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
